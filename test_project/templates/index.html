@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% with word="hello" %}
+
+  {% for char in word %}
+      {{ char }}  {# BREAKPOINT here to test debugger in templates #}
+  {% endfor %}
+
+{% endwith %}
+
+</body>
+</html>
